@@ -1,17 +1,39 @@
-<<<<<<< HEAD
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
 # MarquimDj
 Repositório para projeto de Landpage para um dj/Trainee Visão Jr.
->>>>>>> 4d0d55baf5d6f20f223ca6457a418af33d2d205f
+ 4d0d55baf5d6f20f223ca6457a418af33d2d205f
+---
+
+## 📁 Estrutura de pastas
+marquim-DJ/
+├── public/ # Arquivos públicos (favicon, etc.)
+├── src/
+│ ├── assets/ # Imagens e arquivos estáticos
+│ ├── components/ # Componentes reutilizáveis (ex: <Land />, as telas que serão mostradas)
+│ ├── styles/ # Onde serão colocadas as estilizações(CSS)
+│ ├── App.jsx # Componente principal
+│ ├── App.css # Estilos do App
+│ ├── index.css # Estilos globais
+│ ├── main.jsx # Ponto de entrada do React
+├── .gitignore
+├── index.html # HTML principal
+├── package.json # Dependências e scripts
+├── vite.config.js # Configuração do Vite
+└── README.md
+
+## ▶️ Como rodar o projeto
+
+1. **Clone o repositório:**
+
+No terminal:
+git clone https://github.com/VictorEmanuel04/MarquimDj.git
+cd marquim-DJ
+npm install
+npm run dev
+
+## ▶️ Como fazer commits
+1. **Adicione o que foi modificado:**
+
+No terminal: 
+git add .
+git commit -m "mensagem sobre o que foi alterado(Simplificado)"
+git push origin main
