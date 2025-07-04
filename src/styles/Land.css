@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html, .app {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at center, #2c2c54 0%, #0f0f1a 80%);
+  color: white;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  max-width: 100vw;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.center-picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.center-picture img {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.slogan {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.about img {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
