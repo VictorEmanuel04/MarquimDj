@@ -24,17 +24,17 @@ marquim-DJ/
 
 1. **Clone o repositório:**
 
-No terminal:
-git clone https://github.com/VictorEmanuel04/MarquimDj.git
-cd marquim-DJ
-npm install
+No terminal: (Barra no final serve apenas para separar os comandos)
+git clone https://github.com/VictorEmanuel04/MarquimDj.git /
+cd marquim-DJ /
+npm install /
 npm run dev
 ---
 
 ## ▶️ Como fazer commits
 1. **Adicione o que foi modificado:**
 
-No terminal: 
-git add .
-git commit -m "mensagem sobre o que foi alterado(Simplificado)"
-git push origin main
+No terminal: (Barra no final serve apenas para separar os comandos)
+git add . /
+git commit -m "mensagem sobre o que foi alterado(Simplificado)" /
+git push origin main /
