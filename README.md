@@ -1,6 +1,5 @@
 # MarquimDj
 Repositório para projeto de Landpage para um dj/Trainee Visão Jr.
- 4d0d55baf5d6f20f223ca6457a418af33d2d205f
 ---
 
 ## 📁 Estrutura de pastas
@@ -19,6 +18,7 @@ marquim-DJ/
 ├── package.json # Dependências e scripts
 ├── vite.config.js # Configuração do Vite
 └── README.md
+---
 
 ## ▶️ Como rodar o projeto
 
@@ -29,6 +29,7 @@ git clone https://github.com/VictorEmanuel04/MarquimDj.git
 cd marquim-DJ
 npm install
 npm run dev
+---
 
 ## ▶️ Como fazer commits
 1. **Adicione o que foi modificado:**
