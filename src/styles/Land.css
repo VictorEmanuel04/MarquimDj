@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@1,14..32,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@1,14..32,600&display=swap");
 
 * {
   margin: 0;
@@ -7,10 +7,11 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   height: 100%;
   font-family: "Inter", sans-serif;
-  background: radial-gradient(circle at center, #070C1B 0%, #070C1B 80%);
+  background: radial-gradient(circle at center, #070c1b 0%, #070c1b 80%);
   color: white;
   display: grid;
 }
@@ -23,7 +24,7 @@ body, html {
 
 .header {
   grid-row: 1/2;
-  background-color: #070C1B;
+  background-color: #070c1b;
   position: fixed;
   top: 0;
   left: 0;
@@ -34,8 +35,8 @@ body, html {
   justify-content: space-between;
   align-items: center;
   box-sizing: none;
+  z-index: 10; /* Adicione esta linha */
 }
-
 .nav {
   width: 34rem;
   height: 100px;
@@ -65,7 +66,7 @@ main {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 15rem 5rem 5rem 5rem;
+  padding: 0rem 0rem 0rem 0rem;
 }
 
 #main {
@@ -127,7 +128,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;;
+  text-align: center;
 }
 
 footer {
@@ -140,14 +141,50 @@ footer {
 }
 
 .footer-container > p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: italic;
   font-size: 0.8rem;
   text-align: center;
   color: #c4c4c4;
 }
 
-.fi, .fi-brands-instagram, .fi-rr-envelope{
+.fi,
+.fi-brands-instagram,
+.fi-rr-envelope {
   margin-right: 0.5rem;
   vertical-align: middle;
+}
+/*----------------------------------------------------------------------------------------------*/
+.imagemFesta-container {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+}
+
+.imagemFesta {
+  width: 100vw;
+  height: 80vh;
+  background: linear-gradient(to bottom, #070c1b 0%, rgba(7, 12, 27, 0) 40%),
+    linear-gradient(to top, #070c1b 0%, rgba(7, 12, 27, 0) 40%),
+    url("src/images/show2.jpeg") center center/cover no-repeat;
+  margin-top: 0rem;
+  position: relative;
+  z-index: 0;
+}
+
+.imagemFesta-texto {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+.titleDJMarquin {
+  font-family: "monospace", cursive, sans-serif;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  letter-spacing: 2px;
 }
