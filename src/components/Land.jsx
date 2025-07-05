@@ -5,41 +5,58 @@ const Land = () => {
   return (
      <div className="app">
       <header className="header">
-        <div className="logo">🎵 MDJ</div>
+        <div className="logo">
+          <a href="/">MDJ</a>
+          <img src="src/images/logo.png" alt="" />
+        </div>
         <nav className="nav">
-          <a href="#">Início</a>
-          <a href="#">Sobre</a>
-          <a href="#">Apresentações</a>
-          <a href="#">Formulário</a>
+          <a href="#main">Início</a>
+          <a href="#about">Sobre</a>
+          <a href="#presentation">Apresentações</a>
+          <a href="#form">Formulário</a>
         </nav>
       </header>
 
-      <section className="center-picture">
-        <h1>Início</h1>
-        <img
-          src="https://images.unsplash.com/photo-1518976024611-488d8b6e1c9c?auto=format&fit=crop&w=800&q=80"
-          alt="Festa / DJ"
-        />
-        <div className="title">MARQUIM DJ</div>
-        <div className="slogan">"Conectando pessoas através da música!"</div>
-      </section>
-      
-      <div className='about'>
-        <section className='about-picture'>
-            <div className='about-title'>
-                <h3>Sobre</h3>
-            <img 
-                src="" 
-                alt="Dj" 
-            />
-                <div className='about-text'>Sou DJ porque falar com música é bem mais legal. Me inspiro no
-                    groove do funk, nas batidas certeiras do house e na vibe futurista
-                    do techno. Misturo tudo pra fazer a pista dançar sem pensar em
-                    mais nada. Som na caixa e bora curtir!
-                </div>
-            </div>
+      <main>
+        <section id="main"> 
+          <h1>Início</h1>
+          <div className="title">MARQUIM DJ</div>
+          <div className="slogan">"Conectando pessoas através da música!"</div>
         </section>
-      </div>
+        
+        <section id="about">
+          <h2>Sobre</h2>
+          <div className="about-container">
+          </div>
+        </section>
+
+        <section id="presentation">
+          <h2>Apresentação</h2>
+          <div className="presentation-container">
+          </div>
+        </section>
+
+        <section id="form">
+          <h2>Formulário</h2>
+          <div className="foorm-container">
+          </div>
+        </section>
+      </main>
+
+      <footer>
+          <div className="footer-container">
+            <p>© 2025 Marquim DJ — Todos os direitos reservados</p>
+            <p>Siga minhas redes:</p>
+            <p>
+              <i className="fi fi-brands-instagram"></i>
+              https://www.instagram.com/visaojrufop
+            </p>
+            <p>
+              <i className="fi fi-rr-envelope"></i>
+              contato@visaojr.com.br
+            </p>
+          </div>
+      </footer>
     </div>
 
   )
