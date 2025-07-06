@@ -1,8 +1,10 @@
 .slider-wrapper {
   position: relative;
-  width: 1600px;
+  width: 100%;
+  max-width: 1200px;
   height: 800px;
   overflow: hidden;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,13 +14,14 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  transform: translateX(0);
   transition: transform 0.5s ease;
+  will-change: transform;
 }
 
 .slider-slide {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  max-width: 800px; 
+  height: auto;
   border-radius: 12px;
   flex-shrink: 0;
   transition: all 0.5s ease;
@@ -34,6 +37,7 @@
   z-index: 2;
 }
 
+/* Botões do slider */
 .slider-button {
   position: absolute;
   top: 50%;
@@ -58,7 +62,4 @@
 
 .slider-button.right {
   right: 10px;
-}
-.slider-track {
-  transform: translateX(calc(50% - 150px - calc(var(--current) * (300px + 1rem))));
 }

@@ -7,13 +7,14 @@
   box-sizing: border-box;
 }
 
-body,
-html {
+body, html {
   height: 100%;
+  width: 100%;
   font-family: "Inter", sans-serif;
   background: radial-gradient(circle at center, #070c1b 0%, #070c1b 80%);
   color: white;
   display: grid;
+  /*overflow-x: hidden; NÃO USE ATÉ ACHAR O QUE ESTA ESTOURANDO A LARGURA*/ 
 }
 
 .app {
@@ -30,15 +31,15 @@ html {
   left: 0;
   right: 0;
   height: 10rem;
-  padding: 6rem 12rem 5rem 12rem;
+  width: 100%;
+  padding: 6rem 5vw 5rem 5vw; 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-sizing: none;
-  z-index: 10; /* Adicione esta linha */
+  box-sizing: border-box;
+  z-index: 10;
 }
 .nav {
-  width: 34rem;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -51,6 +52,7 @@ html {
   font-weight: bold;
   font-size: 1.3rem;
   border-bottom: 1.5px solid #c2c2c2;
+  margin-left: 50px;
 }
 
 .nav a:hover {
@@ -66,7 +68,6 @@ main {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0rem 0rem 0rem 0rem;
 }
 
 #main {
@@ -79,7 +80,6 @@ main {
 }
 
 .main-picture img {
-  max-width: 600px;
   width: 100%;
   border-radius: 8px;
   margin-top: 1.5rem;
@@ -91,20 +91,19 @@ main {
 }
 
 .slogan {
-  font-size: 1.6rem;
+  font-size: 2.6rem;
   font-style: italic;
-  margin-top: -3rem;
+  padding-top: 7rem;
 }
 
 #about {
   grid-row: 3/4;
   display: flex;
   flex-direction: column;
-  position: relative;
-  top: -35rem; /* Ajuste para subir mais */
   align-items: center;
   justify-content: center;
   text-align: center;
+  max-width: 100%;
 }
 
 .about-container {
@@ -112,12 +111,10 @@ main {
   position: relative;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  gap: 1rem;
-  margin-top: -20rem;
+  justify-content: center;
   background: none;
-  border-radius: 2rem;
-  padding: 2rem 0 2rem 0; /* Remove o padding lateral */
+  height: 1000px;
+  padding: 0rem 5rem 0rem 5rem; /* Remove o padding lateral */
   box-shadow: none; /* Remove a sombra */
 }
 
@@ -132,65 +129,99 @@ main {
 }
 
 .glow1 {
-  width: 260px;
-  height: 260px;
-  top: 200px;
-  left: 300px;
-  background: linear-gradient(135deg, #ffe066 60%, #ff6ec7 100%);
+  width: 290px;
+  height: 290px;
+  top: 18%;
+  left: 10%;
+  background: linear-gradient(135deg, #ffe066bd 60%, #ff6ec7 100%);
 }
 
 .glow2 {
-  width: 220px;
-  height: 220px;
-  top: 700px;
-  left: 1100px;
-  background: linear-gradient(135deg, #b388ff 60%, #6ec7ff 100%);
+  width: 280px;
+  height: 280px;
+  top: 70%; 
+  left: 80%; 
+  transform: translateX(-50%); 
+  background: linear-gradient(135deg, #8a5fd4d3 60%, #072cff 100%);
 }
 
 .glow3 {
-  width: 220px;
-  height: 220px;
-  top: 800px;
-  left: 0;
-  background: linear-gradient(135deg, #ff6ec7 60%, #6effb3 100%);
+  width: 780px;
+  height: 260px;
+  top: 95%; 
+  left: 6%; 
+  background: linear-gradient(135deg, #ff6ec7b2 60%, #6effb3 100%);
 }
 
 .glow4 {
-  width: 260px;
-  height: 260px;
-  top: 320px;
-  left: 1800px;
-  background: linear-gradient(135deg, #6ec7ff 60%, #ffe066 100%);
+  width: 290px;
+  height: 290px;
+  top: 50%; 
+  left: 57%; 
+  background: linear-gradient(135deg, #309cdf 60%, #ffe066 100%);
 }
 
-.about img,
-.about-text {
+.glow5 {
+  width: 390px;
+  height: 390px;
+  top: 13%; 
+  left: 73%; 
+  background: linear-gradient(135deg, #4341cfb0 60%, #ffcc00 100%);
+}
+
+.glow6 {
+  width: 390px;
+  height: 490px;
+  top: 35%; 
+  left: 25%; 
+  background: linear-gradient(135deg, #ff6e6eda 60%, #ffcc00 100%);
+}
+
+.glow7 {
+  width: 250px;
+  height: 250px;
+  top: 100%; 
+  left: 60%; 
+  background: linear-gradient(135deg, #f7873cc2 60%, #ffcc00 100%);
+}
+
+.about img, .about-text {
   position: relative;
   z-index: 1;
 }
 
 .about img {
-  max-width: 1100px;
+  padding: 0;
   width: 100%;
-  border-radius: 8px;
-  margin-top: -2rem;
-  margin-left: -10rem;
+  height: auto;
+  opacity: 0.8;
 }
 
 .about-text {
   font-size: 1.4rem; /* Aumenta o tamanho da fonte */
   font-family: 'Inter', sans-serif; /* Fonte padrão que pode ser substituída */
+  width: 60%;
+  text-align: justify;
 }
 
 
 #presentation {
   grid-row: 4/5;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   margin-top: 6rem;
+  padding: 0 1rem;
+}
+
+.presentation-container {
+  width: 100%;
+  max-width: 1200px;
+  overflow-x: hidden;
+  padding: 0 1rem;
 }
 
 #form {
@@ -233,7 +264,7 @@ footer {
 }
 
 .imagemFesta {
-  width: 100vw;
+  width: 100%;
   height: 80vh;
   background: linear-gradient(to bottom, #070c1b 0%, rgba(7, 12, 27, 0) 40%),
     linear-gradient(to top, #070c1b 0%, rgba(7, 12, 27, 0) 40%),
@@ -259,9 +290,9 @@ footer {
   font-size: 10rem;
   margin-top: 1rem;
   letter-spacing: 2px;
-  
+  max-width: 100%;
+  padding: 0rem 5rem 0rem 5rem;
   color: white;
   mix-blend-mode: overlay;
   -webkit-text-stroke: 1px white;
-
 }

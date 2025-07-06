@@ -39,31 +39,21 @@ const Land = () => {
             <div class="glow glow2"></div>
             <div class="glow glow3"></div>
             <div class="glow glow4"></div>
+            <div class="glow glow5"></div>
+            <div class="glow glow6"></div>
+            <div class="glow glow7"></div>
             <div className="about img">
               <img src="src/images/DJ9.png" alt="DJ Marquim" />
             </div>
             <div className="about-text">
               <p>
-                <p>
-                  Sou um apaixonado por música eletrônica e busco, através dos
-                  meus sets, criar experiências únicas que conectam pessoas
-                </p>
-                <p>
-                  Inspirado por grandes nomes do cenário eletrônico, mistura
-                  estilos como Techno, Progressive e Pop Eletrônico
-                </p>
-                <p>
-                  Meu objetivo é transformar cada apresentação em um momento
-                  inesquecível, seja em festas, eventos ou clubes
-                </p>
-                <p>
-                  Levo ao público intensidade, criatividade e amor pela música,
-                  buscando sempre surpreender a expetativa de todos
-                </p>
-                <p>
-                  A música é mais do que uma paixão, é a sua forma de conectar e
-                  criar memórias inesquecíveis para todos.
-                </p>
+                Sou DJ porque falar com música é bem mais legal.
+                Inspirado por grandes nomes do cenário eletrônico, 
+                misturo o groove do funk, as batidas do house, 
+                a vibe do techno e elementos do progressive e pop eletrônico para criar sets únicos e cheios de personalidade. 
+                Meu objetivo é transformar cada apresentação em uma experiência inesquecível, 
+                conectando pessoas através da intensidade, criatividade e amor pela música. 
+                Som na caixa e bora curtir!
               </p>
             </div>
           </div>
