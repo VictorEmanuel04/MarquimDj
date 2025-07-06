@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Land.css";
+import Slider from './Slider' 
 
 const Land = () => {
   return (
@@ -20,9 +21,10 @@ const Land = () => {
       <main>
         <section id="main">
           <div className="imagemFesta-container">
-            <div className="imagemFesta"></div>
-            <div className="imagemFesta-texto">
+            <div className="imagemFesta">
               <div className="titleDJMarquin">MARQUIM DJ</div>
+            </div>
+            <div className="imagemFesta-texto">
               <div className="slogan">
                 "Conectando pessoas através da música!"
               </div>
@@ -37,7 +39,11 @@ const Land = () => {
 
         <section id="presentation">
           <h2>Apresentação</h2>
-          <div className="presentation-container"></div>
+          <div className="presentation-container">
+            <div className="slider-presentation">
+              <Slider className="Slider"/>
+            </div>
+          </div>
         </section>
 
         <section id="form">
