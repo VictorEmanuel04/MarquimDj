@@ -170,6 +170,7 @@ footer {
   margin-top: 0rem;
   position: relative;
   z-index: 0;
+  padding-top: 3rem;
 }
 
 .imagemFesta-texto {
@@ -183,8 +184,13 @@ footer {
 
 @import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
 .titleDJMarquin {
-  font-family: "monospace", cursive, sans-serif;
-  font-size: 2.5rem;
+  font-family: "Monoton", cursive, sans-serif;
+  font-size: 10rem;
   margin-top: 1rem;
   letter-spacing: 2px;
+  
+  color: white;
+  mix-blend-mode: overlay;
+  -webkit-text-stroke: 1px white;
+
 }
