@@ -26,7 +26,7 @@ const Land = () => {
             </div>
             <div className="imagemFesta-texto">
               <div className="slogan">
-                "Conectando pessoas através da música!"
+                Conectando pessoas através da música!
               </div>
             </div>
           </div>
@@ -34,14 +34,46 @@ const Land = () => {
 
         <section id="about">
           <h2>Sobre</h2>
-          <div className="about-container"></div>
+          <div className="about-container">
+            <div class="glow glow1"></div>
+            <div class="glow glow2"></div>
+            <div class="glow glow3"></div>
+            <div class="glow glow4"></div>
+            <div className="about img">
+              <img src="src/images/DJ9.png" alt="DJ Marquim" />
+            </div>
+            <div className="about-text">
+              <p>
+                <p>
+                  Sou um apaixonado por música eletrônica e busco, através dos
+                  meus sets, criar experiências únicas que conectam pessoas
+                </p>
+                <p>
+                  Inspirado por grandes nomes do cenário eletrônico, mistura
+                  estilos como Techno, Progressive e Pop Eletrônico
+                </p>
+                <p>
+                  Meu objetivo é transformar cada apresentação em um momento
+                  inesquecível, seja em festas, eventos ou clubes
+                </p>
+                <p>
+                  Levo ao público intensidade, criatividade e amor pela música,
+                  buscando sempre surpreender a expetativa de todos
+                </p>
+                <p>
+                  A música é mais do que uma paixão, é a sua forma de conectar e
+                  criar memórias inesquecíveis para todos.
+                </p>
+              </p>
+            </div>
+          </div>
         </section>
 
         <section id="presentation">
           <h2>Apresentação</h2>
           <div className="presentation-container">
             <div className="presentation-slider">
-              <Slider/>
+              <Slider />
             </div>
           </div>
         </section>

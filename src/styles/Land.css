@@ -91,26 +91,97 @@ main {
 }
 
 .slogan {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-style: italic;
-  margin-top: 0.5rem;
+  margin-top: -3rem;
 }
 
 #about {
   grid-row: 3/4;
   display: flex;
   flex-direction: column;
+  position: relative;
+  top: -35rem; /* Ajuste para subir mais */
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
+.about-container {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: -20rem;
+  background: none;
+  border-radius: 2rem;
+  padding: 2rem 0 2rem 0; /* Remove o padding lateral */
+  box-shadow: none; /* Remove a sombra */
+}
+
+.glow {
+  position: absolute;
+  border-radius: 2rem;
+  filter: blur(40px);
+  opacity: 0.7;
+  z-index: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.glow1 {
+  width: 260px;
+  height: 260px;
+  top: 200px;
+  left: 300px;
+  background: linear-gradient(135deg, #ffe066 60%, #ff6ec7 100%);
+}
+
+.glow2 {
+  width: 220px;
+  height: 220px;
+  top: 700px;
+  left: 1100px;
+  background: linear-gradient(135deg, #b388ff 60%, #6ec7ff 100%);
+}
+
+.glow3 {
+  width: 220px;
+  height: 220px;
+  top: 800px;
+  left: 0;
+  background: linear-gradient(135deg, #ff6ec7 60%, #6effb3 100%);
+}
+
+.glow4 {
+  width: 260px;
+  height: 260px;
+  top: 320px;
+  left: 1800px;
+  background: linear-gradient(135deg, #6ec7ff 60%, #ffe066 100%);
+}
+
+.about img,
+.about-text {
+  position: relative;
+  z-index: 1;
+}
+
 .about img {
-  max-width: 600px;
+  max-width: 1100px;
   width: 100%;
   border-radius: 8px;
-  margin-top: 1.5rem;
+  margin-top: -2rem;
+  margin-left: -10rem;
 }
+
+.about-text {
+  font-size: 1.4rem; /* Aumenta o tamanho da fonte */
+  font-family: 'Inter', sans-serif; /* Fonte padrão que pode ser substituída */
+}
+
 
 #presentation {
   grid-row: 4/5;
