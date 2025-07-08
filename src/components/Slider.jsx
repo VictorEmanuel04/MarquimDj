@@ -1,39 +1,65 @@
-import { useState } from 'react'
-import '../styles/Slider.css'
+import { useState } from "react";
+import "../styles/Slider.css";
 
 const images = [
   "/src/images/equipamento-de-dj-1.jpg",
   "https://source.unsplash.com/800x400/?music,2",
   "https://source.unsplash.com/800x400/?party,3"
-]
+];
 
 export default function Slider() {
-  const [current, setCurrent] = useState(0)
+  const [current, setCurrent] = useState(0);
 
-  const nextSlide = () => setCurrent((current + 1) % images.length)
-  const prevSlide = () => setCurrent((current - 1 + images.length) % images.length)
-
-  const slideWidth = 300 + 16
+  const nextSlide = () => setCurrent((current + 1) % images.length);
+  const prevSlide = () => setCurrent((current - 1 + images.length) % images.length);
 
   return (
     <div className="slider-wrapper">
       <button className="slider-button left" onClick={prevSlide}>‹</button>
-      <div
-        className="slider-track"
-        style={{
-          transform: `translateX(calc(50% - 150px - ${current * slideWidth}px))`
-        }}
-      >
-        {images.map((img, index) => (
-          <img
-            key={index}
-            src={img}
-            alt={`Slide ${index + 1}`}
-            className={`slider-slide ${index === current ? 'active' : 'blurred'}`}
-          />
-        ))}
+      <div className="slider-track">
+        {images.map((img, index) => {
+          const diff = (index - current + images.length) % images.length;
+          let style = {};
+
+          if (diff === 0) {
+            style = {
+              transform: "translateX(0) scale(1.1) rotateY(0deg)",
+              zIndex: 3,
+              opacity: 1,
+              filter: "none"
+            };
+          } else if (diff === 1) {
+            style = {
+              transform: "translateX(250px) scale(0.9) rotateY(45deg)",
+              zIndex: 2,
+              opacity: 0.4
+            };
+          } else if (diff === images.length - 1) {
+            style = {
+              transform: "translateX(-250px) scale(0.9) rotateY(-45deg)",
+              zIndex: 2,
+              opacity: 0.4
+            };
+          } else {
+            style = {
+              transform: "scale(0.7)",
+              zIndex: 1,
+              opacity: 0
+            };
+          }
+
+          return (
+            <img
+              key={index}
+              src={img}
+              alt={`Slide ${index + 1}`}
+              className="slider-slide"
+              style={style}
+            />
+          );
+        })}
       </div>
       <button className="slider-button right" onClick={nextSlide}>›</button>
     </div>
-  )
+  );
 }
