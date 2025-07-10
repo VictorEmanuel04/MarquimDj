@@ -14,7 +14,6 @@ body, html {
   background: radial-gradient(circle at center, #070c1b 0%, #070c1b 80%);
   color: white;
   display: grid;
-  /*overflow-x: hidden; NÃO USE ATÉ ACHAR O QUE ESTA ESTOURANDO A LARGURA*/ 
 }
 
 .app {
@@ -39,6 +38,16 @@ body, html {
   box-sizing: border-box;
   z-index: 10;
 }
+
+.menu-mobile{
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #ffff;
+  cursor: pointer;
+}
+
 .nav {
   height: 100px;
   display: flex;
@@ -60,6 +69,46 @@ body, html {
   transform: scale(1.05);
   transition: transform 0.2s ease;
   filter: drop-shadow(0 0 4em #ff00ff);
+}
+
+.nav-sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100vh;
+  background-color: #070c1b;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px;
+  transition: right 3s ease-in-out;
+  z-index: 999;
+}
+
+.nav-sidebar a {
+  display: block;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #444;
+  padding: 10px 0;
+}
+
+.nav-sidebar.open {
+  right: 0;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: 0;
 }
 
 main {
@@ -114,8 +163,8 @@ main {
   justify-content: center;
   background: none;
   height: 1000px;
-  padding: 0rem 5rem 0rem 5rem; /* Remove o padding lateral */
-  box-shadow: none; /* Remove a sombra */
+  padding: 0rem 5rem 0rem 5rem; 
+  box-shadow: none; 
 }
 
 .glow {
@@ -198,8 +247,8 @@ main {
 }
 
 .about-text {
-  font-size: 1.4rem; /* Aumenta o tamanho da fonte */
-  font-family: 'Inter', sans-serif; /* Fonte padrão que pode ser substituída */
+  font-size: 1.4rem; 
+  font-family: 'Inter', sans-serif; 
   width: 60%;
   text-align: justify;
 }
@@ -295,4 +344,16 @@ footer {
   color: white;
   mix-blend-mode: overlay;
   -webkit-text-stroke: 1px white;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 1160px) {
+  .nav {
+    display: none;
+  }
+
+  .menu-mobile{
+    display: block;
+  }
 }

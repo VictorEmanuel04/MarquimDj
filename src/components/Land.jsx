@@ -1,8 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/Land.css";
 import Slider from "./Slider";
 
 const Land = () => {
+
+  const [menuOn, setMenuOn] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1160);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 1160px)");
+
+    const handleSize = (e) => {
+      setIsMobile(e.matches)
+      if(!e.matches) setMenuOn(false)
+    }
+
+    setIsMobile(mediaQuery.matches);
+
+    mediaQuery.addEventListener("change", handleSize);
+    
+    return() => {
+      mediaQuery.removeEventListener("change", handleSize);
+    }
+  }, [])
+
   return (
     <div className="app">
       <header className="header">
@@ -10,12 +31,35 @@ const Land = () => {
           <a href="/">MDJ</a>
           <img src="src/images/logo.png" alt="" />
         </div>
-        <nav className="nav">
-          <a href="#main">Início</a>
-          <a href="#about">Sobre</a>
-          <a href="#presentation">Apresentações</a>
-          <a href="#form">Formulário</a>
-        </nav>
+
+        {isMobile && (
+          <button 
+            className="menu-mobile" 
+            onClick={() => setMenuOn(!menuOn)}
+          >
+            ☰
+          </button>
+        )}
+        
+        {!isMobile && (
+          <nav className="nav">
+            <a href="#main">Início</a>
+            <a href="#about">Sobre</a>
+            <a href="#presentation">Apresentações</a>
+            <a href="#form">Formulário</a>
+          </nav>
+        )}
+
+        {isMobile && menuOn &&(
+          <nav className={`nav-sidebar ${menuOn ? "open" : ""}`}>
+            <button className="close-button" onClick={() => setMenuOn(false)}>×</button>
+            <a href="#main" onClick={() => setMenuOn(false)}>Início</a>
+            <a href="#about" onClick={() => setMenuOn(false)}>Sobre</a>
+            <a href="#presentation" onClick={() => setMenuOn(false)}>Apresentações</a>
+            <a href="#form" onClick={() => setMenuOn(false)}>Formulário</a>
+          </nav>
+        )}
+        
       </header>
 
       <main>
