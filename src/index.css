@@ -99,3 +99,16 @@ button:focus-visible {
 ::-webkit-scrollbar-thumb:hover {
   background: #050427;
 }
+
+@media (max-width: 1160px){
+  section{
+    padding-top: 10rem;
+    padding-bottom: 7rem;
+  }
+}
+
+@media (max-width: 1160px){
+  html, body{
+    overflow-x: hidden;
+  }
+}

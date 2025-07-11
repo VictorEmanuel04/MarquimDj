@@ -77,7 +77,7 @@ body, html {
   right: -100%;
   width: 250px;
   height: 100vh;
-  background-color: #070c1b;
+  background-color: rgba(7, 12, 27, 0.95);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -355,5 +355,41 @@ footer {
 
   .menu-mobile{
     display: block;
+  }
+}
+
+@media (max-width: 1160px){
+  .titleDJMarquin{
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 1160px){
+  .slogan{
+    font-size: 1.5rem;
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 1160px){
+  .about-container{
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .about img{
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+  .about-text{
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: justify;
+    width: 100%;
+  }
+}
+@media (max-width: 1160px){
+  #about{
+    padding-top: 0;
   }
 }
