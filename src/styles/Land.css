@@ -275,11 +275,121 @@ main {
 
 #form {
   grid-row: 5/6;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.foorm-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  min-height: 300px;
+  width: 100%;
+  padding: 15rem 5rem 5rem 5rem;
+  box-shadow: none; 
+  transition: all 0.5s ease;
+}
+
+#botao-contrate {
+  border: 7px solid #8400ff;
+  padding: 15px 20px;
+  background-color: #ff9900;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: "Inter", sans-serif;
+  transition: all 0.3s ease;
+}
+
+#botao-contrate:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+  filter: drop-shadow(0 0 4em #ff00ff);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  gap: 25px;
+}
+
+.form-group, .botao-enviar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: max-height 0.6s ease-out, opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.form-group label {
+  margin-bottom: 8px; 
+  font-size: 1.1rem;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #0e1529;
+  color: white;
+  font-size: 1rem;
+}
+
+.form-group input::placeholder, .form-group textarea::placeholder {
+  font-style: italic;
+  color: #888;
+}
+
+.botao-enviar {
+  border: 3px solid #00ff88;
+  padding: 15px 20px;
+  background-color: #070c1b;
+  color: #00ff88;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.botao-enviar:hover {
+  transform: scale(1.05);
+  background-color: #00ff88;
+  color: #070c1b;
+  filter: drop-shadow(0 0 1.5em #00ff88);
+  border-color: #ffffffad;
+}
+
+.contact-form.form-visible #botao-contrate {
+  max-height: 0;
+  padding: 0;
+  border: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.contact-form.form-visible .form-group, .contact-form.form-visible .botao-enviar {
+  max-height: 500px;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 footer {
@@ -291,17 +401,8 @@ footer {
   height: 200px;
 }
 
-.footer-container > p {
-  font-family: "Inter", sans-serif;
-  font-style: italic;
-  font-size: 0.8rem;
-  text-align: center;
-  color: #c4c4c4;
-}
 
-.fi,
-.fi-brands-instagram,
-.fi-rr-envelope {
+.fi, .fi-brands-instagram, .fi-rr-envelope {
   margin-right: 0.5rem;
   vertical-align: middle;
 }

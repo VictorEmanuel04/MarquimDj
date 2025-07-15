@@ -24,6 +24,12 @@ const Land = () => {
     }
   }, [])
 
+  const [isFormVisible, setIsFormVisible] = useState(false);
+
+  const handleContrateClick = () => {
+    setIsFormVisible(true);
+  };
+
   return (
     <div className="app">
       <header className="header">
@@ -114,7 +120,34 @@ const Land = () => {
 
         <section id="form">
           <h2>Formulário</h2>
-          <div className="foorm-container"></div>
+          <div className="foorm-container">
+            <form action="#" className={`contact-form ${isFormVisible ? 'form-visible' : ''}`}> 
+              <input type="button" id="botao-contrate" value="CONTRATE JÁ!" onClick={handleContrateClick}/>
+
+              <div className="form-group">
+                <label htmlFor="nome">Digite seu nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Seu nome completo"/>
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="email">Digite seu email</label>
+                <input type="email" name="email" id="email" placeholder="seu@email.com"/>
+              </div>
+              
+              <div className="form-group">
+                <label htmlFor="data">Data do show</label>
+                <input type="date" name="data" id="data" />
+              </div> 
+
+              <div className="form-group">
+                <label htmlFor="mensagem">Sua Mensagem</label>
+                <textarea name="mensagem" id="mensagem" rows="4" placeholder="Digite sua mensagem aqui..."></textarea>
+              </div> 
+              
+              <button type="submit" className="botao-enviar">ENVIAR</button>
+              
+            </form>
+          </div>
         </section>
       </main>
 
