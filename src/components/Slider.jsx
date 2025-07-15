@@ -2,9 +2,9 @@ import { useState } from "react";
 import "../styles/Slider.css";
 
 const images = [
-  "/src/images/equipamento-de-dj-1.jpg",
-  "https://source.unsplash.com/800x400/?music,2",
-  "https://source.unsplash.com/800x400/?party,3"
+  "Marquim1.jpg",
+  "Marquim2.jpg",
+  "Marquim3.jpg"
 ];
 
 export default function Slider() {

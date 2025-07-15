@@ -34,8 +34,7 @@ const Land = () => {
     <div className="app">
       <header className="header">
         <div className="logo">
-          <a href="/">MDJ</a>
-          <img src="src/images/logo.png" alt="" />
+          <img src="MarquimTitle2.png" alt="" />
         </div>
 
         {isMobile && (
@@ -110,7 +109,7 @@ const Land = () => {
         </section>
 
         <section id="presentation">
-          <h2>Apresentação</h2>
+          <h2>Apresentações</h2>
           <div className="presentation-container">
             <div className="presentation-slider">
               <Slider />

@@ -39,6 +39,11 @@ body, html {
   z-index: 10;
 }
 
+.logo img {
+  height: 12rem;
+  width: 12rem;       
+}
+
 .menu-mobile{
   display: none;
   background: none;
@@ -155,6 +160,12 @@ main {
   max-width: 100%;
 }
 
+#about h2{
+  text-decoration: underline;
+  text-decoration-color: #8400ff;
+  font-size: 5rem;
+}
+
 .about-container {
   display: flex;
   position: relative;
@@ -262,15 +273,23 @@ main {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 6rem;
-  padding: 0 1rem;
+  margin-top: 15rem;
+  padding: 0 4rem;
+  margin-bottom: 2rem;
+}
+
+#presentation h2{
+  text-decoration: underline;
+  text-decoration-color: #8400ff;
+  font-size: 5rem;
 }
 
 .presentation-container {
   width: 100%;
   max-width: 1200px;
   overflow-x: hidden;
-  padding: 0 1rem;
+  padding: 0 4rem;
+  margin-top: -20rem;
 }
 
 #form {
@@ -281,6 +300,12 @@ main {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+#form h2{
+  text-decoration: underline;
+  text-decoration-color: #8400ff;
+  font-size: 5rem;
 }
 
 .foorm-container {

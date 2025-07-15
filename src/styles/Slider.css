@@ -2,13 +2,14 @@
   position: relative;
   width: 100%;
   max-width: 1200px;
-  height: 500px;
+  height: 1400px;
   margin: 0 auto;
-  overflow: hidden;
+  overflow: visible;
   display: flex;
   align-items: center;
   justify-content: center;
   perspective: 1000px;
+  margin-top: -4rem;
 }
 
 .slider-track {
@@ -24,8 +25,8 @@
   right: 0;
   margin: auto;
   transform: translateY(-50%);
-  width: 400px;
-  height: 250px;
+  width: 800px;
+  height: 600px;
   transition: all 0.5s ease;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.3);
@@ -35,9 +36,9 @@
 
 .slider-button {
   position: absolute;
-  top: 50%;
+  top: 75%;
   transform: translateY(-50%);
-  font-size: 2rem;
+  font-size: 3rem;
   color: white;
   background: rgba(0, 0, 0, 0.5);
   border: none;
@@ -48,9 +49,9 @@
 }
 
 .slider-button.left {
-  left: 10px;
+  left: -2rem;
 }
 
 .slider-button.right {
-  right: 10px;
+  right: -2rem;
 }
