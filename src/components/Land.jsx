@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Land.css";
 import Slider from "./Slider";
+import ReviewsSlider from "./ReviewsSlider";
 
 const Land = () => {
 
@@ -118,11 +119,15 @@ const Land = () => {
         </section>
 
         <section id="form">
-          <h2>Formulário</h2>
+          <h2>Quer contar com minha presença?</h2>
+          <p>Veja minhas avaliações e não perca tempo!</p>
           <div className="foorm-container">
+            <div className="reviews">
+              <ReviewsSlider/>
+            </div>
+
             <form action="#" className={`contact-form ${isFormVisible ? 'form-visible' : ''}`}> 
               <input type="button" id="botao-contrate" value="CONTRATE JÁ!" onClick={handleContrateClick}/>
-
               <div className="form-group">
                 <label htmlFor="nome">Digite seu nome</label>
                 <input type="text" name="nome" id="nome" placeholder="Seu nome completo"/>

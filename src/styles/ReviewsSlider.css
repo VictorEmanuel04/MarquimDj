@@ -1,0 +1,61 @@
+.vertical-slider-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  overflow: hidden;
+  position: relative;
+  background-color: #ff9900;
+  padding: 0;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00000020;
+}
+
+.vertical-slider-track {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  height: 90%;
+  width: 100%;
+  overflow: visible;
+  position: relative;
+  padding-top: 2rem;
+  padding-left: 6rem;
+  padding-bottom: 2rem;
+}
+
+.reviewslider-slide-vertical {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.reviewslider-button {
+  background-color: transparent;
+  border: none;
+  color: #000;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 6px 12px;
+  margin: 0.3rem 0;
+  transition: transform 0.2s ease;
+  width: 100%;
+}
+
+.reviewslider-button:hover {
+  transform: scale(1.1);
+}
+
+.reviewslider-button.up,
+.reviewslider-button.down {
+  width: 100%;
+}

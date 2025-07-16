@@ -307,12 +307,16 @@ main {
   text-decoration-color: #8400ff;
   font-size: 5rem;
 }
+#form p{
+  font-size: 3rem;
+  color: #8400ff;
+}
 
 .foorm-container {
   display: flex;
   position: relative;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
   justify-content: center;
   background: none;
   min-height: 300px;
@@ -320,6 +324,37 @@ main {
   padding: 15rem 5rem 5rem 5rem;
   box-shadow: none; 
   transition: all 0.5s ease;
+  gap: 1rem;
+}
+
+.reviews{
+  flex: 0.7;
+  max-width: 500px;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00000020;
+  color: white;
+}
+
+.reviews h3{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #00ffff;
+  padding-bottom: 0.5rem;
+}
+
+.single-review{
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 8px #00000030;
+}
+
+.single-review img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
 }
 
 #botao-contrate {
@@ -331,6 +366,7 @@ main {
   font-size: 30px;
   font-family: "Inter", sans-serif;
   transition: all 0.3s ease;
+  align-self: center;
 }
 
 #botao-contrate:hover {
@@ -344,8 +380,15 @@ main {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 500px;
-  gap: 25px;
+  max-width: 700px;
+  flex: 1.8;
+  gap: 1rem;
+  background-color: transparent;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00000020;
+  color: white;
+  padding-top: 10rem;
 }
 
 .form-group, .botao-enviar {
@@ -401,6 +444,10 @@ main {
   color: #070c1b;
   filter: drop-shadow(0 0 1.5em #00ff88);
   border-color: #ffffffad;
+}
+
+.contact-form.form-visible{
+  padding-top: 0;
 }
 
 .contact-form.form-visible #botao-contrate {
