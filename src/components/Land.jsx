@@ -2,8 +2,11 @@ import React, { useEffect, useState } from "react";
 import "../styles/Land.css";
 import Slider from "./Slider";
 import ReviewsSlider from "./ReviewsSlider";
+import emailjs from 'emailjs-com';
 
 const Land = () => {
+
+  
 
   const [menuOn, setMenuOn] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1160);
@@ -29,6 +32,28 @@ const Land = () => {
 
   const handleContrateClick = () => {
     setIsFormVisible(true);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      'service_jbfl3gf',    
+      'template_clt0tbm',   
+      e.target,
+      'sXmsP3qUHP2APxY5d'        
+    ).then(
+      (result) => {
+        console.log("E-mail enviado:", result.text);
+        alert("E-mail enviado com sucesso!");
+      },
+      (error) => {
+        console.log("Erro ao enviar:", error.text);
+        alert("Erro ao enviar e-mail.");
+      }
+    );
+
+    e.target.reset();
   };
 
   return (
@@ -126,7 +151,9 @@ const Land = () => {
               <ReviewsSlider/>
             </div>
 
-            <form action="#" className={`contact-form ${isFormVisible ? 'form-visible' : ''}`}> 
+            <form 
+            onSubmit={handleSubmit}
+            action="#" className={`contact-form ${isFormVisible ? 'form-visible' : ''}`}> 
               <input type="button" id="botao-contrate" value="CONTRATE JÁ!" onClick={handleContrateClick}/>
               <div className="form-group">
                 <label htmlFor="nome">Digite seu nome</label>
@@ -135,7 +162,7 @@ const Land = () => {
 
               <div className="form-group">
                 <label htmlFor="email">Digite seu email</label>
-                <input type="email" name="email" id="email" placeholder="seu@email.com"/>
+                <input type="email" name="email" id="email" placeholder="seu@email.com" required/>
               </div>
               
               <div className="form-group">
