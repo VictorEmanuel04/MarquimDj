@@ -1,13 +1,13 @@
 .review-card {
   background-color: #fff;
   border-radius: 10px;
-  padding: 1rem;
+  padding: clamp(0.8rem, 2vw, 1.2rem);
   color: #000;
   width: 100%;
-  max-width: 320px;
+  max-width: clamp(260px, 90vw, 320px);
   box-shadow: 0 4px 12px #00000030;
   font-family: 'Inter', sans-serif;
-  margin-bottom: 1rem;
+  margin-bottom: clamp(0.3rem, 1vh, 1rem);
 }
 
 .review-header {
@@ -18,12 +18,12 @@
 
 .review-name {
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: clamp(0.8rem, 2.5vw, 1.1rem);
 }
 
 .review-stars span {
   color: #ccc;
-  font-size: 1.2rem;
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
 }
 
 .review-stars .filled {
@@ -31,13 +31,14 @@
 }
 
 .review-date {
-  font-size: 0.8rem;
+  font-size: clamp(0.6rem, 1.5vw, 0.8rem);
   color: #aaa;
   margin-top: 0.3rem;
 }
 
 .review-comment {
-  margin-top: 0.8rem;
+  margin-top: clamp(0.3rem, 1vh, 0.8rem);
   font-style: italic;
+  font-size: clamp(0.7rem, 2vw, 1rem);
   line-height: 1.4;
 }

@@ -286,10 +286,25 @@ main {
 .presentation-container {
   width: 100%;
   max-width: 1200px;
-  overflow-x: hidden;
-  padding: 0 4rem;
-  margin-top: -20rem;
+  height: clamp(320px, 60vh, 800px); 
+  padding: 0 clamp(1rem, 4vw, 4rem);
+  margin-top: clamp(-4rem, -10vh, -2rem); 
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
+.presentation-slider {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
 
 #music{
   grid-row: 5/6;
@@ -552,49 +567,188 @@ footer {
 }
 
 /*-------------------------------------------------------------------------------------------------------------------*/
-
 @media (max-width: 1160px) {
   .nav {
     display: none;
   }
 
-  .menu-mobile{
+  .menu-mobile {
     display: block;
   }
-}
 
-@media (max-width: 1160px){
-  .titleDJMarquin{
-    font-size: 5rem;
+  .titleDJMarquin {
+    font-size: clamp(2.5rem, 6vw, 6rem);
+    margin-top: 8rem;
   }
-}
 
-@media (max-width: 1160px){
-  .slogan{
-    font-size: 1.5rem;
+  .slogan {
+    font-size: clamp(0.8rem, 3vw, 1.3rem);
     padding-top: 2rem;
   }
-}
 
-@media (max-width: 1160px){
-  .about-container{
-    flex-direction: column-reverse;
-    height: auto;
+  #main {
+    padding: 2rem 1rem 2rem 0;
   }
 
-  .about img{
+  #about h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+  }
+
+  .about-container {
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 2rem 2.3rem;
+  }
+
+  .glow3, .glow7 {
+    display: none;
+  }
+
+  .about img {
     width: 90%;
     margin-bottom: 2rem;
   }
-  .about-text{
-    font-size: 1rem;
-    margin-top: 1rem;
-    text-align: justify;
+
+  .about-text {
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
     width: 100%;
+    text-align: justify;
+  }
+
+  #presentation {
+    padding: 2rem 1rem;
+    padding-left: 0;
+    margin-top: 5rem;
+  }
+
+  #presentation h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+  }
+
+  .presentation-container {
+    padding: 0 1rem;
+    margin-top: 0;
+  }
+
+  #music {
+    margin-top: 8rem;
+    padding: 0 2rem;
+  }
+
+  #music h2 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+  }
+
+  .music-container {
+    flex-direction: column;
+    height: auto;
+    padding: 0 2rem;
+  }
+
+  #form h2 {
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+  }
+
+  #form p {
+    font-size: clamp(1rem, 3vw, 2rem);
+  }
+
+  .foorm-container {
+    flex-direction: column;
+    padding: 2rem 1rem 2rem 0;
+    gap: 2rem;
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+    padding-top: 2rem;
+  }
+
+  .reviews {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem 1rem 1rem 0;
+  }
+
+  .form-group label {
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+  }
+
+  #botao-contrate {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    padding: 10px 15px;
+  }
+
+  .botao-enviar {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    padding: 12px 15px;
+  }
+
+  footer {
+    height: auto;
+    padding: 2rem 0;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.75rem;
+  }
+
+  .logo {
+    margin: 0 auto;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
   }
 }
-@media (max-width: 1160px){
-  #about{
-    padding-top: 0;
+
+@media (max-width: 400px) {
+  header {
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+  }
+
+  .logo {
+    max-width: 100px;
+    padding-left: 0;
+  }
+
+  .menu-toggle {
+    margin-right: 0;
+  }
+
+  .menu {
+    width: 100vw;
+    padding: 2rem 1rem;
+  }
+
+  .menu ul li {
+    font-size: clamp(0.9rem, 3vw, 1.2rem);
+    margin-bottom: 1.2rem;
+  }
+
+  .menu .close-icon {
+    top: 1rem;
+    right: 1rem;
+  }
+
+  #music {
+    margin-top: 6rem;
+    padding: 0 1rem;
+  }
+
+  #music h2 {
+    font-size: clamp(2rem, 6vw, 2.5rem);
+  }
+
+  .music-container {
+    flex-direction: column;
+    height: auto;
+    padding: 0 1rem;
   }
 }

@@ -112,3 +112,10 @@ button:focus-visible {
     overflow-x: hidden;
   }
 }
+
+@media (max-width: 480px){
+  section{
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+  }
+}

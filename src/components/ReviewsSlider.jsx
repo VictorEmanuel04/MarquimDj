@@ -33,6 +33,8 @@ const reviews = [
 export default function ReviewsSlider() {
   const [current, setCurrent] = useState(0);
 
+  const isMobile = window.innerWidth <= 1160;
+
   const nextSlide = () =>
     setCurrent((current + 1) % reviews.length);
 
@@ -57,7 +59,7 @@ export default function ReviewsSlider() {
               zIndex: 3,
               opacity: 1,
               filter: "none",
-              height: "140px",
+              height: "clamp(90px, 16vh, 140px)",
               width: "100%"
             };
           } else if (diff === 1 || diff === -1) {
@@ -66,7 +68,7 @@ export default function ReviewsSlider() {
               zIndex: 2,
               opacity: 0.4,
               filter: "blur(2px)",
-              height: "100px"
+              height: "clamp(60px, 12vh, 100px)"
             };
           } else {
             style = {
