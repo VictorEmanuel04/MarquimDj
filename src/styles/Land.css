@@ -264,7 +264,6 @@ main {
   text-align: justify;
 }
 
-
 #presentation {
   grid-row: 4/5;
   width: 100%;
@@ -292,8 +291,40 @@ main {
   margin-top: -20rem;
 }
 
-#form {
+#music{
   grid-row: 5/6;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 15rem;
+  padding: 0 4rem;
+  margin-bottom: 2rem;
+}
+
+#music h2 {
+  text-decoration: underline;
+  text-decoration-color: #8400ff;
+  font-size: 5rem;
+}
+
+.music-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  height: 1000px;
+  padding: 0rem 5rem 0rem 5rem; 
+  box-shadow: none; 
+}
+
+#form {
+  grid-row: 6/7;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -358,6 +389,7 @@ main {
 }
 
 #botao-contrate {
+  color: #ffffff;
   border: 7px solid #8400ff;
   padding: 15px 20px;
   background-color: #ff9900;

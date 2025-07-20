@@ -3,11 +3,9 @@ import "../styles/Land.css";
 import Slider from "./Slider";
 import ReviewsSlider from "./ReviewsSlider";
 import emailjs from 'emailjs-com';
+import MusicPlayer from "./MusicPlayer";
 
 const Land = () => {
-
-  
-
   const [menuOn, setMenuOn] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1160);
 
@@ -77,6 +75,7 @@ const Land = () => {
             <a href="#main">Início</a>
             <a href="#about">Sobre</a>
             <a href="#presentation">Apresentações</a>
+            <a href="#music">Músicas</a>
             <a href="#form">Formulário</a>
           </nav>
         )}
@@ -86,6 +85,7 @@ const Land = () => {
             <button className="close-button" onClick={() => setMenuOn(false)}>×</button>
             <a href="#main" onClick={() => setMenuOn(false)}>Início</a>
             <a href="#about" onClick={() => setMenuOn(false)}>Sobre</a>
+            <a href="#music" onClick={() => setMenuOn(false)}>Músicas</a>
             <a href="#presentation" onClick={() => setMenuOn(false)}>Apresentações</a>
             <a href="#form" onClick={() => setMenuOn(false)}>Formulário</a>
           </nav>
@@ -139,6 +139,15 @@ const Land = () => {
           <div className="presentation-container">
             <div className="presentation-slider">
               <Slider />
+            </div>
+          </div>
+        </section>
+
+        <section id="music">
+          <h2>Minhas músicas mais tocadas!</h2>
+          <div className="music-container">
+            <div className="music-slider">
+              <MusicPlayer />
             </div>
           </div>
         </section>
