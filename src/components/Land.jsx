@@ -33,26 +33,34 @@ const Land = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    emailjs.sendForm(
-      'service_jbfl3gf',    
-      'template_clt0tbm',   
-      e.target,
-      'sXmsP3qUHP2APxY5d'        
-    ).then(
-      (result) => {
-        console.log("E-mail enviado:", result.text);
-        alert("E-mail enviado com sucesso!");
-      },
-      (error) => {
-        console.log("Erro ao enviar:", error.text);
-        alert("Erro ao enviar e-mail.");
-      }
-    );
+  const form = e.target;
 
-    e.target.reset();
+  const templateParams = {
+    email: form.email.value,
+    'Show MarquimDJ': form.data.value,
+    time: new Date().toLocaleString('pt-BR')
   };
+
+  emailjs.send(
+    'service_jbfl3gf',
+    'template_clt0tbm',
+    templateParams,
+    'sXmsP3qUHP2APxY5d'
+  ).then(
+    (result) => {
+      console.log("E-mail enviado:", result.text);
+      alert("E-mail enviado com sucesso!");
+    },
+    (error) => {
+      console.log("Erro ao enviar:", error.text);
+      alert("Erro ao enviar e-mail.");
+    }
+  );
+
+  form.reset();
+};
 
   return (
     <div className="app">
