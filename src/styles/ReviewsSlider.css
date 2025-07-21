@@ -26,7 +26,6 @@
   overflow: visible;
   position: relative;
   padding-top: clamp(1rem, 3vh, 2rem);
-  padding-left: clamp(1rem, 5vw, 6rem);
   padding-bottom: clamp(1rem, 3vh, 2rem);
 }
 
@@ -70,6 +69,6 @@
   }
 
   .vertical-slider-track {
-    padding-left: 1rem;
+    padding: 0 1rem 0 1rem;
   }
 }

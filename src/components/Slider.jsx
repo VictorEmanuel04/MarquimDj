@@ -2,9 +2,10 @@ import { useState } from "react";
 import "../styles/Slider.css";
 
 const images = [
-  "Marquim1.jpg",
+  "Marquim1.png",
   "Marquim2.jpg",
-  "Marquim3.jpg"
+  "Marquim3.jpg",
+  "Marquim4.png"
 ];
 
 export default function Slider() {
@@ -23,26 +24,26 @@ export default function Slider() {
 
           if (diff === 0) {
             style = {
-              transform: "translateX(0) scale(1.1) rotateY(0deg)",
+              transform: "translateX(0) scale(0.8) rotateY(0deg)",
               zIndex: 3,
               opacity: 1,
               filter: "none"
             };
           } else if (diff === 1) {
             style = {
-              transform: "translateX(250px) scale(0.9) rotateY(45deg)",
+              transform: "translateX(250px) scale(0.7) rotateY(20deg)",
               zIndex: 2,
               opacity: 0.4
             };
           } else if (diff === images.length - 1) {
             style = {
-              transform: "translateX(-250px) scale(0.9) rotateY(-45deg)",
+              transform: "translateX(-250px) scale(0.7) rotateY(-20deg)",
               zIndex: 2,
               opacity: 0.4
             };
           } else {
             style = {
-              transform: "scale(0.7)",
+              transform: "scale(0.5)",
               zIndex: 1,
               opacity: 0
             };

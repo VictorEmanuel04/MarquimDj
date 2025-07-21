@@ -60,7 +60,7 @@ export default function ReviewsSlider() {
               opacity: 1,
               filter: "none",
               height: "clamp(90px, 16vh, 140px)",
-              width: "100%"
+              width: "fit-content"
             };
           } else if (diff === 1 || diff === -1) {
             style = {
@@ -68,7 +68,8 @@ export default function ReviewsSlider() {
               zIndex: 2,
               opacity: 0.4,
               filter: "blur(2px)",
-              height: "clamp(60px, 12vh, 100px)"
+              height: "clamp(60px, 12vh, 100px)",
+              width: "fit-content"
             };
           } else {
             style = {
