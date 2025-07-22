@@ -13,6 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -22,18 +26,28 @@ a:hover {
   color: #535bf2;
 }
 
+section {
+  scroll-margin-top: 10rem;
+  padding-top: 10rem;
+  padding-bottom: 15rem;
+}
+
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2.8em;
   line-height: 1.1;
 }
+
+h2 {
+  font-size: 2.8em;
+  line-height: 1.1;
+}
+
 
 button {
   border-radius: 8px;
@@ -64,5 +78,72 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #070c1b; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #050427;
+}
+
+html, body, #root, .app, main, section {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main, #main {
+  display: block;
+}
+
+.imagemFesta-container {
+  width: 100%;
+  max-width: 100vw;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.imagemFesta {
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(to bottom, #070c1b 0%, rgba(7, 12, 27, 0) 40%),
+              linear-gradient(to top, #070c1b 0%, rgba(7, 12, 27, 0) 40%),
+              url("src/images/show2.jpeg") center center/cover no-repeat;
+}
+
+
+@media (max-width: 1160px){
+  section{
+    padding-top: 10rem;
+    padding-bottom: 7rem;
+  }
+}
+
+@media (max-width: 1160px){
+  html, body{
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 480px){
+  section{
+    padding-top: 5rem;
+    padding-bottom: 10rem;
   }
 }

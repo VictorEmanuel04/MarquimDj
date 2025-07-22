@@ -1,18 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  display: flex;               
+  align-items: center;       
   will-change: filter;
   transition: filter 300ms;
+  font-family: 'Wallpoet', sans-serif;
+  font-size: 8em;
+}
+
+.logo a {
+  color: white;
+}
+
+.logo img {
+  height: 0.75em;
+  width: auto;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #ff00ff);
+  transform: scale(1.03);
+  transition: transform 0.2s ease;
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
