@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body, html {
@@ -15,12 +16,14 @@ body, html {
   color: white;
   display: grid;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .app {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -37,6 +40,7 @@ body, html {
   align-items: center;
   box-sizing: border-box;
   z-index: 10;
+  scroll-behavior: smooth;
 }
 
 .logo img {
