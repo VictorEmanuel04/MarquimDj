@@ -1,28 +1,86 @@
 import React, { useState, useRef, useEffect } from 'react';
 import '../styles/MusicPlayer.css';
-import music1 from '../music/Dr. Dre - The Next Episode ft. Snoop Dogg_ Kurupt_(MP3_160K).mp3';
-import music2 from '../music/Guns N_ Roses - Sweet Child O_ Mine (Official Music Video)(MP3_70K).mp3';
-import music3 from '../music/Kendrick Lamar - HUMBLE(MP3_160K).mp3';
-import cover1 from '../images/Musica1.jpg';
+import music1 from '../music/Cartoon, Jéja - On & On (feat. Daniel Levi) ｜ Electronic Pop ｜ NCS - Copyright Free Music.mp3';
+import music2 from '../music/Culture Code - Make Me Move (feat. Karra) ｜ Dance Pop ｜ NCS - Copyright Free Music.mp3';
+import music3 from '../music/Different Heaven - Safe And Sound ｜ House ｜ NCS - Copyright Free Music.mp3';
+import music4 from '../music/Elektronomia - Sky High ｜ Progressive House ｜ NCS - Copyright Free Music.mp3';
+import music5 from '../music/Janji - Heroes Tonight (feat. Johnning) ｜ Progressive House ｜ NCS - Copyright Free Music.mp3';
+import music6 from '../music/Jim Yosef - Firefly ｜ Progressive House ｜ NCS - Copyright Free Music.mp3';
+import music7 from '../music/Lost Sky - Fearless pt.II (feat. Chris Linton) ｜ Trap ｜ NCS - Copyright Free Music.mp3';
+import music8 from '../music/Rival - Throne (ft. Neoni) (Lost Identities Remix) ｜ DnB ｜ NCS - Copyright Free Music.mp3';
+import music9 from '../music/Tobu - Candyland [Privated NCS Release].mp3';
+import music10 from '../music/Unknown Brain - Superhero (feat. Chris Linton) ｜ Trap ｜ NCS - Copyright Free Music.mp3';
+import cover1 from '../images/Capa 1.jpg';
+import cover2 from '../images/Capa 2.jpg';
+import cover3 from '../images/Capa 3.png';
+import cover4 from '../images/Capa 4.jpg';
+import cover5 from '../images/Capa 5.png';
+import cover6 from '../images/Capa 6.png';
+import cover7 from '../images/Capa 7.png';
+import cover8 from '../images/Capa 8.png';
+import cover9 from '../images/Capa 9.png';
+import cover10 from '../images/Capa 10.png';
 
 const musicas = [
   {
-    title: "The Next Episode",
-    artist: "Dr. Dre ft. Snoop Dogg",
+    title: "Different Heaven",
+    artist: "DJ Marquim",
+    audioSrc: music3,
+    imageSrc: cover3,
+  },
+  {
+    title: "Cartoon, Jéja - On & On",
+    artist: "DJ Marquim - feat. Daniel Levi",
     audioSrc: music1,
     imageSrc: cover1,
   },
   {
-    title: "Sweet Child O' Mine",
-    artist: "Guns N' Roses",
-    audioSrc: music2,
-    imageSrc: cover1,
+    title: "Fearless",
+    artist: "DJ Marquim - feat. Chris Linton",
+    audioSrc: music7,
+    imageSrc: cover7,
   },
   {
-    title: "HUMBLE.",
-    artist: "Kendrick Lamar",
-    audioSrc: music3,
-    imageSrc: cover1,
+    title: "Throne",
+    artist: "DJ Marquim - ft. Neoni",
+    audioSrc: music8,
+    imageSrc: cover8,
+  },
+  {
+    title: "Candyland",
+    artist: "DJ Marquim",
+    audioSrc: music9,
+    imageSrc: cover9,
+  },
+  {
+    title: "Superhero",
+    artist: "DJ Marquim - feat. Chris Linton",
+    audioSrc: music10,
+    imageSrc: cover10,
+  },
+  {
+    title: "Culture Code - Make Me Move",
+    artist: "DJ Marquim - feat. Karra",
+    audioSrc: music2,
+    imageSrc: cover2,
+  },
+  {
+    title: "Heroes Tonight",
+    artist: "DJ Marquim - feat. Johnning",
+    audioSrc: music5,
+    imageSrc: cover5,
+  },
+  {
+    title: "Sky High",
+    artist: "DJ Marquim",
+    audioSrc: music4,
+    imageSrc: cover4,
+  },
+  {
+    title: "Firefly",
+    artist: "DJ Marquim",
+    audioSrc: music6,
+    imageSrc: cover6,
   },
 ];
 
