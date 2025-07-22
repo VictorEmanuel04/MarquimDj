@@ -282,6 +282,7 @@ main {
   text-decoration: underline;
   text-decoration-color: #8400ff;
   font-size: 5rem;
+  margin-bottom: 3rem;
 }
 
 .presentation-container {
@@ -635,6 +636,7 @@ footer {
 
   #presentation h2 {
     font-size: clamp(1.8rem, 4vw, 2.5rem);
+    margin-bottom: 0;
   }
 
   .presentation-container {

@@ -25,7 +25,7 @@
 .slider-slide {
   position: absolute;
   margin: 0 auto;
-  top: 30%;
+  top: 7%;
   transform: translateY(-50%);
   width: clamp(280px, 70vw, 800px);
   height: auto; 
@@ -93,7 +93,7 @@
 
   .slider-slide {
     max-height: 100%;
-    top: 27%;
+    top: 25%;
     transform: translateY(-50%);
     filter: blur(1px);
     opacity: 0.6;
@@ -105,7 +105,7 @@
 
 @media(max-width: 480px){
   .slider-button{
-    top: 55%;
+    top: 40%;
   }
 }
 

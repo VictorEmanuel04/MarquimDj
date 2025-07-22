@@ -4,7 +4,7 @@ import "../styles/Slider.css";
 const images = [
   "Marquim1.png",
   "Marquim2.jpg",
-  "Marquim3.jpg",
+  "Marquim2.png",
   "Marquim4.png"
 ];
 
