@@ -282,7 +282,13 @@ main {
   text-decoration: underline;
   text-decoration-color: #8400ff;
   font-size: 5rem;
-  margin-bottom: 9rem;
+  margin-bottom: 8rem;
+}
+
+#presentation p{
+  font-size: 3rem;
+  color: #8400ff;
+  margin-bottom: 1rem;
 }
 
 .presentation-container {
@@ -581,8 +587,8 @@ footer {
   }
 
   .logo img {
-  height: 4rem;
-  width: 4rem;       
+  height: 4.5rem;
+  width: 4.5rem;       
 }
 
   .menu-mobile {
@@ -590,7 +596,7 @@ footer {
   }
 
   .titleDJMarquin {
-    font-size: clamp(2.5rem, 6vw, 6rem);
+    font-size: clamp(2.5rem, 6vw, 7rem);
     margin-top: 6rem;
   }
 
@@ -637,6 +643,10 @@ footer {
   #presentation h2 {
     font-size: clamp(1.8rem, 4vw, 2.5rem);
     margin-bottom: 0;
+  }
+
+  #presentation p {
+    font-size: clamp(1rem, 3vw, 2rem);
   }
 
   .presentation-container {
@@ -756,7 +766,7 @@ footer {
   }
 
   #music {
-    margin-top: 6rem;
+    margin-top: 1rem;
     padding: 0 1rem;
   }
 

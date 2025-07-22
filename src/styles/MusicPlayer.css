@@ -138,7 +138,8 @@
 
   .song-list {
     width: 100%;
-    max-height: none;
+    max-height: 400px;
+    overflow-y: auto;
     padding-right: 0;
     border-right: none;
     border-bottom: 1px solid #eee;

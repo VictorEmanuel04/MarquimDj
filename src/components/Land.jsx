@@ -144,6 +144,7 @@ const Land = () => {
 
         <section id="presentation">
           <h2>Apresentações</h2>
+          <p>Se liga como são meus shows!</p>
           <div className="presentation-container">
             <div className="presentation-slider">
               <Slider />
@@ -205,7 +206,14 @@ const Land = () => {
           <p>Siga minhas redes:</p>
           <p>
             <i className="fi fi-brands-instagram"></i>
-            https://www.instagram.com/visaojrufop
+            <a 
+              href="https://www.instagram.com/visaojrufop" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{ textDecoration: 'none', color: 'inherit' }}
+            >
+              https://www.instagram.com/visaojrufop
+            </a>
           </p>
           <p>
             <i className="fi fi-rr-envelope"></i>
