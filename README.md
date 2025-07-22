@@ -38,3 +38,6 @@ No terminal: (Barra no final serve apenas para separar os comandos)
 git add . /
 git commit -m "mensagem sobre o que foi alterado(Simplificado)" /
 git push origin main /
+
+## Figma do projeto:
+https://www.figma.com/proto/KRPR9we31GAtFCBVtiCJIf/Prototipo?node-id=8-3&p=f&t=nuGZKbRqHhzjQ0Ew-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1
