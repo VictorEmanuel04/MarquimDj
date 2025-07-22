@@ -53,7 +53,7 @@
 
 .slider-button {
   position: absolute;
-  top: 72%;
+  top: 60%;
   transform: translateY(-50%);
   font-size: clamp(1.5rem, 4vw, 3rem);
   color: white;
