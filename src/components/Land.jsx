@@ -126,7 +126,7 @@ const Land = () => {
             <div class="glow glow6"></div>
             <div class="glow glow7"></div>
             <div className="about img">
-              <img src="src/images/DJ9.png" alt="DJ Marquim" />
+              <img src="DJ9.png" alt="DJ Marquim" />
             </div>
             <div className="about-text">
               <p>
