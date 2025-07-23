@@ -555,7 +555,7 @@ footer {
   height: 80vh;
   background: linear-gradient(to bottom, #070c1b 0%, rgba(7, 12, 27, 0) 40%),
     linear-gradient(to top, #070c1b 0%, rgba(7, 12, 27, 0) 40%),
-    url("show2.jpeg") center center/cover no-repeat;
+    url("MarquimDj/show2.jpeg") center center/cover no-repeat;
   margin-top: 0rem;
   position: relative;
   z-index: 0;
