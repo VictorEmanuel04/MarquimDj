@@ -292,7 +292,7 @@ main {
 #presentation p{
   font-size: 3rem;
   color: #8400ff;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .presentation-container {
@@ -652,6 +652,7 @@ footer {
 
   #presentation p {
     font-size: clamp(1rem, 3vw, 2rem);
+    margin-bottom: 1rem;
   }
 
   .presentation-container {
